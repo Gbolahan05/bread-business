@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #d2691e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home-section {
+    text-align: center;
+    padding: 150px 30px;
+    background: url('bread\ logo.png') no-repeat center center/cover;
+    color: white;
+    animation: fadein 2s ease-in;
+}
+
+.home-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-section .btn {
+    background-color: #d2691e;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+.products-section, .about-section, .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    animation: slidein 1.5s ease-out;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: tranform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+.home-sectionn {
+    animation: fadein 2s ease-in;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+}
+
+.home-section btn {
+    animation: bounce 2s infinite;
+}
+
+@keyframes slide {
+    from { transform: translateX(-100%);}
+    to { transform: translateX(0);}
+}
+
+.product-section, .about-section, .contact-section {
+    animation: 1.5s ease-out;
+}
